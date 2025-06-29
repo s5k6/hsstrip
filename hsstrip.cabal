@@ -8,7 +8,7 @@ author:              Stefan Klinger
 maintainer:          haskell@stefan-klinger.de
 
 category:            experimantal
-synopsis:            a toy haskell experiment
+synopsis:            Strips comments and empty lines from Haskell source code.
 
 license-file:        LICENSE
 
@@ -21,7 +21,7 @@ common shared-properties
   default-extensions:  BangPatterns
                      , ScopedTypeVariables
                      , LambdaCase
-                     , OverloadedStrings
+                    -- , OverloadedStrings
 
   mixins:              base hiding ( Control.Concurrent, Control.Exception
                                    , Control.Concurrent.STM )
@@ -49,7 +49,7 @@ common production-properties
                        -dynamic
 
 common chosen-properties
-  import: devel-properties
+  import: production-properties
 
 
 
@@ -62,7 +62,7 @@ executable hsstrip
   --other-modules:
 
   build-depends:       base
-                     , text
+                    -- , text
                     -- , unliftio
                     -- , attoparsec
                     -- , bytestring
