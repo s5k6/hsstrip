@@ -1,0 +1,19 @@
+# For advanced use and comprehensive documentation of the format, please see:
+# https://docs.haskellstack.org/en/stable/yaml_configuration/
+
+
+resolver: lts-23.7
+
+
+packages:
+
+  - .
+
+
+#extra-deps:
+#
+#  - git: https://github.com/s5k6/robust-int
+#    commit: 354985343cc642492181afe2fe7fde3e39c157ed
+#
+#  - git: https://github.com/s5k6/shuntingYard
+#    commit: 6173fbe4877abe48516966accaf57b027b205b6c
